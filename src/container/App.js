@@ -28,7 +28,7 @@ function App() {
             .then(users => {
                 setRobots(users)
             });
-    })
+    }, [])
 
     
     const filterRobots = robots.filter(robots =>{
