@@ -32,7 +32,7 @@ function App(props) {
     const filterRobots = robots.filter(robots =>{
         return robots.name.toLowerCase().includes(searchField.toLowerCase())
     })
-    return !isPending ? <h1>Loading</h1>
+    return isPending ? <h1>Loading</h1>
         :(
             <div className='tc'>
             <h1 className='f1'>RobotFriends</h1>
