@@ -24,9 +24,9 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 function App(props) {
-    const { searchField, onSearchChange, robots, isPending } = props
+    const { searchField, onSearchChange, robots, isPending, onRequestRobots } = props
     
-    useEffect(()=>props.onRequestRobots(),[])
+    useEffect(onRequestRobots,[])
 
     
     const filterRobots = robots.filter(robots =>{
